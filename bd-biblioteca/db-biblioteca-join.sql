@@ -64,6 +64,6 @@ INSERT INTO Emprestimos (id_livro, id_usuario, DataEmprestimo) VALUES
 -- Consulta com Joins
 SELECT Emprestimos.id_emprestimo, Livros.Titulo, Usuarios.Nome, Emprestimos.DataEmprestimo, Emprestimos.DataDevolucao
 FROM Emprestimos
-JOIN Livros ON Emprestimos.id_livro = Livros.id_livro
-JOIN Usuarios ON Emprestimos.id_usuario = Usuarios.id_usuario;
+INNER JOIN Livros ON Emprestimos.id_livro = Livros.id_livro
+INNER JOIN Usuarios ON Emprestimos.id_usuario = Usuarios.id_usuario;
 
